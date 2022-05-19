@@ -1,5 +1,5 @@
 {
-  "name": "docker---gh-actions",
+  "name": "slides-class-docker",
   "private": true,
   "scripts": {
     "build": "slidev build",
