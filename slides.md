@@ -94,9 +94,38 @@ centrado {
 
 ---
 
-# For Example
+# How to make a Dockerfile?
+This file is made up of a series of commands that I will indicate below, and that are responsible for [building the image.](https://atareao.es/tutorial/docker/crear-tus-propias-imagenes-docker/)
 
-```docker {all|1-4|6-9|10|12|14-15|all}
+### Docker Commands
+|     |     |
+| --- | --- |
+<kbd>ADD</kbd> | copies a file from the host to the container.
+<kbd>CMD</kbd> | the argument you pass by default.
+<kbd>ENTRYPOINT</kbd> | the command that is executed by default when starting the container.
+<kbd>ENV</kbd> | allows you to declare an environment variable in the container.
+<kbd>EXPOSE</kbd> | open a container port.
+<kbd>FROM</kbd> | indicates the base image that you will use to build your custom image. This option is required, and must also be the first instruction in the Dockerfile.
+
+---
+
+# Docker Commands
+|     |     |
+| --- | --- |
+<kbd>MAINTAINER</kbd> | is an optional value that allows you to indicate who is in charge of maintaining the Dockerfile.
+<kbd>ONBUILD</kbd> | allows you to indicate a command that is executed when your image is used to create another image.
+<kbd>RUN</kbd> | run a command and save the result as a new layer.
+<kbd>USER</kbd> | defines the default user of the container.
+<kbd>VOLUME</kbd> | creates a volume that is shared by the different containers or with the host.
+<kbd>WORKDIR</kbd> | defines the working directory for the container.
+
+[Learn more](https://docs.docker.com/engine/reference/builder/)
+
+---
+
+# Basic Example
+
+```docker {all|1-4|6-9|10-11|13|15-16|all}
 FROM python:3.9
 
 ENV APP_HOME /usr/src/app
@@ -106,6 +135,7 @@ WORKDIR /$APP_HOME
 COPY requirements.txt /tmp/
 RUN pip install --requirement /tmp/requirements.txt
 RUN pip freeze
+# Copy env variables
 ADD .env .env
 
 COPY . $APP_HOME/
@@ -113,4 +143,3 @@ COPY . $APP_HOME/
 # Run
 CMD python main.py
 ```
-
