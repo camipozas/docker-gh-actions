@@ -8,7 +8,7 @@ class: 'text-center'
 # https://sli.dev/custom/highlighters.html
 highlighter: shiki
 # show line numbers in code blocks
-lineNumbers: false
+lineNumbers: true
 # some information about the slides, markdown enabled
 info: |
   ## Slidev Starter Template
@@ -43,7 +43,7 @@ Camila Pozas - TechOps
 
 ---
 layout: image-right
-image: https://images.unsplash.com/photo-1490644658840-3f2e3f8c5625
+image: https://images.unsplash.com/photo-1541336032412-2048a678540d
 ---
 
 # What is Docker?
@@ -67,3 +67,50 @@ h1 {
 </style>
 
 ---
+
+# Process of creating a container in Docker
+
+In addition, it is necessary to clarify that within the container a series of instructions **(dockerfile)** are defined that allow creating an image **(docker image)** with which to start said container **(docker container)**.[^1]
+
+1. 🐳 **Dockerfile:** it is the text document on which we can group a series of commands so that they are all executed at the same time, thus avoiding having to execute them one by one manually so that the process of creating a Docker image is much easier. faster and more efficient.
+2. 🖼️ **Docker image:** a Docker image, contains the libraries, along with the application code that contains everything necessary to run our application.
+3. 📦 **Container:** It is a Docker image when it starts working, that is, when it comes to life.
+
+
+<div id="centrado">
+  <img src="https://profile.es/wp-content/media/image-1.png" align="right" width="600" height="600"/>
+</div>
+
+<style>
+centrado {
+  position: relative;
+  margin: 0 auto;
+  height: 100px;
+  width: 100px;
+}
+</style>
+
+[^1]: [Learn More](https://profile.es/blog/que_es_docker/)
+
+---
+
+# For Example
+
+```docker {all|1-4|6-9|10|12|14-15|all}
+FROM python:3.9
+
+ENV APP_HOME /usr/src/app
+WORKDIR /$APP_HOME
+
+# Install python dependencies
+COPY requirements.txt /tmp/
+RUN pip install --requirement /tmp/requirements.txt
+RUN pip freeze
+ADD .env .env
+
+COPY . $APP_HOME/
+
+# Run
+CMD python main.py
+```
+
