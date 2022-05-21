@@ -48,11 +48,11 @@ It is a software platform that allows you to quickly build, test, and deploy app
 - 📦 **Packages** Docker packages software into standardized units called containers that include everything needed for the software to run, including libraries, system tools, code, and runtime.
 - 🐳 **Container** Really allows us to encapsulate, that is, pack software inside said container using the microservices architecture.
 
-Read more about [Docker.](https://profile.es/blog/que_es_docker/)
-
 <div id="centrado">
   <img src="https://profile.es/wp-content/media/image.png" align="right" width="300" height="300"/>
 </div>
+
+Read more about [Docker.](https://profile.es/blog/que_es_docker/)
 
 <style>
 centrado {
