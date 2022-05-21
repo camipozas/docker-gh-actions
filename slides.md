@@ -40,6 +40,10 @@ Camila Pozas - TechOps
   </a>
 </div>
 
+
+---
+layout: image-right
+image: https://images.unsplash.com/photo-1490644658840-3f2e3f8c5625
 ---
 
 # What is Docker?
@@ -48,20 +52,7 @@ It is a software platform that allows you to quickly build, test, and deploy app
 - 📦 **Packages** Docker packages software into standardized units called containers that include everything needed for the software to run, including libraries, system tools, code, and runtime.
 - 🐳 **Container** Really allows us to encapsulate, that is, pack software inside said container using the microservices architecture.
 
-<div id="centrado">
-  <img src="https://profile.es/wp-content/media/image.png" align="right" width="300" height="300"/>
-</div>
-
 Read more about [Docker.](https://profile.es/blog/que_es_docker/)
-
-<style>
-centrado {
-  position: relative;
-  margin: 0 auto;
-  height: 100px;
-  width: 100px;
-}
-</style>
 
 <style>
 h1 {
@@ -74,3 +65,5 @@ h1 {
   -moz-text-fill-color: transparent;
 }
 </style>
+
+---
