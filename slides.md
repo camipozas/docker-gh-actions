@@ -223,9 +223,9 @@ layout: image-right
 image: https://images.unsplash.com/photo-1600042863738-970c0d567f6b?
 ---
 
-# GitHub Actions
+# GitHub Actions[^1]
 
-GitHub Definition: _Automate, customize, and execute your software development workflows right in your repository with GitHub Actions. You can discover, create, and share actions to perform any job you'd like, including CI/CD, and combine actions in a completely customized workflow._
+GitHub Definition: _Automate, customize, and execute your software development workflows right in your repository with GitHub Actions. You can discover, create, and share actions to perform any job you'd like, including CI/CD, and combine actions in a completely customized workflow._[^2]
 
 **But, what kind of things we can do?:** 
 - Deploy docker images (or testing of multiple containers), CI/CD, automated PR workflows, connect to cloud services, it's **free**, etc.
@@ -233,12 +233,13 @@ GitHub Definition: _Automate, customize, and execute your software development w
 **Why for us?**
 - Because, we don't need to know too much about infrastructure.
 
-[Learn more](https://docs.github.com/en/actions)
-[Understanding GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions)
+[^1]:[Learn more](https://docs.github.com/en/actions)
+[^2]: [Understanding GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions)
 
 <!--
 Definición de GitHub: _Automatice, personalice y ejecute sus flujos de trabajo de desarrollo de software directamente en su repositorio con GitHub Actions. Puede descubrir, crear y compartir acciones para realizar cualquier trabajo que desee, incluido CI/CD, y combinar acciones en un flujo de trabajo completamente personalizado._
 -->
+
 ---
 
 # How it works?
