@@ -1,4 +1,6 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# Docker and GitHub Actions
+
+Here you can find the basics of Docker and GitHub Actions, in addition to finding what you need to get started in this world.
 
 To start the slide show:
 
