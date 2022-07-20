@@ -54,17 +54,7 @@ It is a software platform that allows you to quickly build, test, and deploy app
 
 Read more about [Docker.](https://profile.es/blog/que_es_docker/)
 
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent;
-}
-</style>
+<link href="styles/style.css" rel="stylesheet" type="text/css" />
 
 <!--
 # ¿Qué es Docker?
@@ -97,17 +87,7 @@ centrado {
 }
 </style>
 
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent;
-}
-</style>
+<link href="styles/style.css" rel="stylesheet" type="text/css" />
 
 [^1]: [Learn More](https://profile.es/blog/que_es_docker/)
 
@@ -134,17 +114,8 @@ This file is made up of a series of commands that I will indicate below, and tha
 <kbd>EXPOSE</kbd> | open a container port.
 <kbd>FROM</kbd> | indicates the base image that you will use to build your custom image. This option is required, and must also be the first instruction in the Dockerfile.
 
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent;
-}
-</style>
+<link href="styles/style.css" rel="stylesheet" type="text/css" />
+
 
 <!--
 1. ADD | copia un archivo del host al contenedor.
@@ -168,17 +139,8 @@ h1 {
 
 [Learn more](https://docs.docker.com/engine/reference/builder/)
 
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent;
-}
-</style>
+<link href="styles/style.css" rel="stylesheet" type="text/css" />
+
 
 <!--
 1. MAINTAINER | es un valor opcional que le permite indicar quién está a cargo del mantenimiento del Dockerfile.
@@ -211,17 +173,8 @@ COPY . $APP_HOME/
 CMD python main.py
 ```
 
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent;
-}
-</style>
+<link href="styles/style.css" rel="stylesheet" type="text/css" />
+
 
 <!--
 - ENV APP_HOME /usr/src/app: dice que la imagen va a tener una variable de ambiente (no lo trae por defecto, seguridad).
@@ -259,17 +212,7 @@ ENTRYPOINT ["python"]
 CMD ["app/main.py"]
 ```
 
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent;
-}
-</style>
+<link href="styles/style.css" rel="stylesheet" type="text/css" />
 
 <!--
 En # Python install continues... le decimos que instale la versión, pip y todo lo necesario, esto se puede simplificar perfectamente si es que la imagen de docker ya existe.
@@ -289,17 +232,7 @@ image: https://images.unsplash.com/photo-1586197403936-bef0b84d9739
 3. <kbd>[COMMAND]</kbd>: you put the parameters for your command. Depending on the command, it might be a file name or a container ID.
 4. <kbd>[ARG…]</kbd>: you can write additional arguments for a command.
 
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent;
-}
-</style>
+<link href="styles/style.css" rel="stylesheet" type="text/css" />
 ---
 
 # Docker Commands
@@ -315,17 +248,7 @@ removes a container | <kbd>docker rm [OPTIONS] CONTAINER [CONTAINER...]</kbd> | 
 [^1]: [Docker Base Command](https://docs.docker.com/engine/reference/commandline/docker/) 
 [^2]: [Docker build](https://docs.docker.com/engine/reference/commandline/build/)
 
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent;
-}
-</style>
+<link href="styles/style.css" rel="stylesheet" type="text/css" />
 
 ---
 
@@ -341,17 +264,8 @@ docker exec | <kbd>docker exec [OPTIONS] CONTAINER COMMAND [ARG...]</kbd> | <kbd
 
 [^1]: [Docker Base Command](https://docs.docker.com/engine/reference/commandline/docker/) 
 
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent;
-}
-</style>
+<link href="styles/style.css" rel="stylesheet" type="text/css" />
+
 ---
 layout: image-right
 image: https://images.unsplash.com/photo-1600042863738-970c0d567f6b?
@@ -369,17 +283,7 @@ GitHub Definition[^1]: _Automate, customize, and execute your software developme
 
 [^1]:[Learn more](https://docs.github.com/en/actions)
 [^2]: [Understanding GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions)
-
 <style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent;
-}
 p {
   font-size: 0.75em;
 }
@@ -390,6 +294,8 @@ a {
   font-size: 14px;
 }
 </style>
+
+<link href="styles/style.css" rel="stylesheet" type="text/css" />
 
 <!--
 Definición de GitHub: _Automatice, personalice y ejecute sus flujos de trabajo de desarrollo de software directamente en su repositorio con GitHub Actions. Puede descubrir, crear y compartir acciones para realizar cualquier trabajo que desee, incluido CI/CD, y combinar acciones en un flujo de trabajo completamente personalizado._
@@ -409,17 +315,7 @@ Definición de GitHub: _Automatice, personalice y ejecute sus flujos de trabajo 
 1. In your repository, create the <kbd>.github/workflows/</kbd> directory to store your workflow files.
 2. In the <kbd>.github/workflows/</kbd> directory, create a new file called <kbd>learn-github-actions.yml</kbd> and add the following code.
   
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent;
-}
-</style>
+<link href="styles/style.css" rel="stylesheet" type="text/css" />
 
 <!--
 - **Workflows:** es un proceso automatizado configurable que ejecutará uno o más jobs.
@@ -460,17 +356,7 @@ jobs:
 ```
 [Workflow Sintax](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions)
 
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent;
-}
-</style>
+<link href="styles/style.css" rel="stylesheet" type="text/css" />
 
 <!--
 - Al usar el evento <kbd>workflow_dispatch</kbd>, puede especificar opcionalmente las entradas que se pasan al flujo de trabajo.
@@ -495,17 +381,7 @@ image: https://images.unsplash.com/photo-1541873676-a18131494184
 4. 📚 There are many execution templates that help us make it even faster.
 5. 🚀 We do not make the execution of the codes depend on us.
 
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent;
-}
-</style>
+<link href="styles/style.css" rel="stylesheet" type="text/css" />
 
 <!--
 1. El panel de QA -> va a aws, si tuviera GPU podríamos correr los contratos quizás.
@@ -514,3 +390,14 @@ h1 {
 4. Está lleno en internet (de ahí me basé para el de Fresh).
 5. Dejamos de lado que los códigos tengamos que correrlos en local.
 -->
+
+---
+layout: center
+class: "text-center"
+---
+
+# Learn More
+
+[GitHub Repo](https://github.com/camipozas/docker-gh-actions) / [Contact Me](https://www.linkedin.com/in/camila-pozas-garcia/)
+
+<link href="styles/style.css" rel="stylesheet" type="text/css" />
