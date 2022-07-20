@@ -85,7 +85,7 @@ In addition, it is necessary to clarify that within the container a series of in
 
 
 <div id="centrado">
-  <img src="/public/images/docker-flow.png" align="right" width="600" height="600"/>
+  <img src="/images/docker-flow.png" align="right" width="600" height="600"/>
 </div>
 
 <style>
@@ -385,6 +385,9 @@ p {
 }
 li {
   font-size: 0.8em;
+}
+a {
+  font-size: 14px;
 }
 </style>
 
