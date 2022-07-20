@@ -85,7 +85,7 @@ In addition, it is necessary to clarify that within the container a series of in
 
 
 <div id="centrado">
-  <img src="images/docker-flow.png" align="right" width="600" height="600"/>
+  <img src="/public/images/docker-flow.png" align="right" width="600" height="600"/>
 </div>
 
 <style>
