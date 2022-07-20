@@ -85,7 +85,7 @@ In addition, it is necessary to clarify that within the container a series of in
 
 
 <div id="centrado">
-  <img src="https://profile.es/wp-content/media/image-1.png" align="right" width="600" height="600"/>
+  <img src="images/docker-flow.png" align="right" width="600" height="600"/>
 </div>
 
 <style>
@@ -94,6 +94,18 @@ centrado {
   margin: 0 auto;
   height: 100px;
   width: 100px;
+}
+</style>
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
 }
 </style>
 
@@ -112,7 +124,7 @@ Además, es necesario aclarar que dentro del contenedor se definen una serie de 
 # How to make a Dockerfile?
 This file is made up of a series of commands that I will indicate below, and that are responsible for [building the image.](https://atareao.es/tutorial/docker/crear-tus-propias-imagenes-docker/)
 
-### Docker Commands
+### Docker main commands
 |     |     |
 | --- | --- |
 <kbd>ADD</kbd> | copies a file from the host to the container.
@@ -121,6 +133,18 @@ This file is made up of a series of commands that I will indicate below, and tha
 <kbd>ENV</kbd> | allows you to declare an environment variable in the container.
 <kbd>EXPOSE</kbd> | open a container port.
 <kbd>FROM</kbd> | indicates the base image that you will use to build your custom image. This option is required, and must also be the first instruction in the Dockerfile.
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+</style>
 
 <!--
 1. ADD | copia un archivo del host al contenedor.
@@ -132,7 +156,7 @@ This file is made up of a series of commands that I will indicate below, and tha
 -->
 ---
 
-# Docker Commands
+# Docker main commands
 |     |     |
 | --- | --- |
 <kbd>MAINTAINER</kbd> | is an optional value that allows you to indicate who is in charge of maintaining the Dockerfile.
@@ -143,6 +167,18 @@ This file is made up of a series of commands that I will indicate below, and tha
 <kbd>WORKDIR</kbd> | defines the working directory for the container.
 
 [Learn more](https://docs.docker.com/engine/reference/builder/)
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+</style>
 
 <!--
 1. MAINTAINER | es un valor opcional que le permite indicar quién está a cargo del mantenimiento del Dockerfile.
@@ -174,6 +210,18 @@ COPY . $APP_HOME/
 # Run
 CMD python main.py
 ```
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+</style>
 
 <!--
 - ENV APP_HOME /usr/src/app: dice que la imagen va a tener una variable de ambiente (no lo trae por defecto, seguridad).
@@ -211,21 +259,107 @@ ENTRYPOINT ["python"]
 CMD ["app/main.py"]
 ```
 
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+</style>
+
 <!--
 En # Python install continues... le decimos que instale la versión, pip y todo lo necesario, esto se puede simplificar perfectamente si es que la imagen de docker ya existe.
 - FROM base as builder: lo que hace es, parte de la imagen de arriba (en teoría se puede sacar, no hace nada)
 - WORKDIR /opt/build: lo que hace es, crea esa carpeta y es donde trabajamos
 - Por qué hay tmp en requirements y en el otro no? pq lo copié en tmp y en este no sino que donde estoy.
 -->
+---
+layout: image-right
+image: https://images.unsplash.com/photo-1586197403936-bef0b84d9739
+---
 
+# Key Terms Related To Docker Commands
+
+1. ☁️ **Docker Hub:** A public registry for developers to distribute their code.
+2. <kbd>[OPTIONS]</kbd>: you can add options to your commands to get different results. Each command has lots of options associated with it. Refer to the documentation for all the details.
+3. <kbd>[COMMAND]</kbd>: you put the parameters for your command. Depending on the command, it might be a file name or a container ID.
+4. <kbd>[ARG…]</kbd>: you can write additional arguments for a command.
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+</style>
+---
+
+# Docker Commands
+|     |     |     |
+| --- | --- | --- |
+**Command**[^1] | **Usage** | **Example**
+docker build[^2] | <kbd>docker build [OPTIONS] [directory/path/URL]</kbd> | <kbd>docker build -t name_image .</kbd>
+docker run | <kbd>docker run [OPTIONS] IMAGE [COMMAND] [ARG...]</kbd> | <kbd>docker run name_image</kbd>
+docker stop | <kbd>docker stop [OPTIONS] CONTAINER [...]</kbd> | <kbd>docker stop my_container</kbd>
+list the docker containers available. | <kbd>docker ps [OPTIONS] </kbd>
+removes a container | <kbd>docker rm [OPTIONS] CONTAINER [CONTAINER...]</kbd> | <kbd>docker rm my_container</kbd>
+
+[^1]: [Docker Base Command](https://docs.docker.com/engine/reference/commandline/docker/) 
+[^2]: [Docker build](https://docs.docker.com/engine/reference/commandline/build/)
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+</style>
+
+---
+
+# Docker Commands
+|     |     |     |
+| --- | --- | --- |
+**Command**[^1] | **Usage** | **Example**
+list the most recently created images | <kbd>docker images</kbd>
+docker tag | <kbd>docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG] </kbd> | <kbd>docker tag id_image camipozas/name_image:latest</kbd>
+docker push | <kbd>docker push [OPTIONS] NAME[:TAG]</kbd> | <kbd>docker push camipozas/name_image </kbd>
+docker pull | <kbd>docker pull [OPTIONS] NAME[:TAG]</kbd> | <kbd>docker pull camipozas/name_image </kbd>
+docker exec | <kbd>docker exec [OPTIONS] CONTAINER COMMAND [ARG...]</kbd> | <kbd>docker exec -it container-name sh</kbd>
+
+[^1]: [Docker Base Command](https://docs.docker.com/engine/reference/commandline/docker/) 
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+</style>
 ---
 layout: image-right
 image: https://images.unsplash.com/photo-1600042863738-970c0d567f6b?
 ---
 
-# GitHub Actions[^1]
+# GitHub Actions
 
-GitHub Definition: _Automate, customize, and execute your software development workflows right in your repository with GitHub Actions. You can discover, create, and share actions to perform any job you'd like, including CI/CD, and combine actions in a completely customized workflow._[^2]
+GitHub Definition[^1]: _Automate, customize, and execute your software development workflows right in your repository with GitHub Actions. You can discover, create, and share actions to perform any job you'd like, including CI/CD, and combine actions in a completely customized workflow._[^2]
 
 **But, what kind of things we can do?:** 
 - Deploy docker images (or testing of multiple containers), CI/CD, automated PR workflows, connect to cloud services, it's **free**, etc.
@@ -235,6 +369,24 @@ GitHub Definition: _Automate, customize, and execute your software development w
 
 [^1]:[Learn more](https://docs.github.com/en/actions)
 [^2]: [Understanding GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions)
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+p {
+  font-size: 0.75em;
+}
+li {
+  font-size: 0.8em;
+}
+</style>
 
 <!--
 Definición de GitHub: _Automatice, personalice y ejecute sus flujos de trabajo de desarrollo de software directamente en su repositorio con GitHub Actions. Puede descubrir, crear y compartir acciones para realizar cualquier trabajo que desee, incluido CI/CD, y combinar acciones en un flujo de trabajo completamente personalizado._
@@ -254,6 +406,18 @@ Definición de GitHub: _Automatice, personalice y ejecute sus flujos de trabajo 
 1. In your repository, create the <kbd>.github/workflows/</kbd> directory to store your workflow files.
 2. In the <kbd>.github/workflows/</kbd> directory, create a new file called <kbd>learn-github-actions.yml</kbd> and add the following code.
   
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+</style>
+
 <!--
 - **Workflows:** es un proceso automatizado configurable que ejecutará uno o más jobs.
 - **Events:** Un evento es una actividad específica en un repositorio, la cual activa una ejecución de flujo de trabajo.
@@ -263,7 +427,7 @@ Definición de GitHub: _Automatice, personalice y ejecute sus flujos de trabajo 
 -->
 ---
 
-# Understanding the workflow file[^1]
+# Understanding the [workflow](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions) file
 
 ```yaml{all|1|2-6|7-8|10-13|15-17|18-24|all}
 name: Upload to S3
@@ -291,8 +455,19 @@ jobs:
       - name: Run script and upload to S3
         run: docker run -e AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }} local
 ```
+[Workflow Sintax](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions)
 
-[^1]: [Workflow Sintax](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions)
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+</style>
 
 <!--
 - Al usar el evento <kbd>workflow_dispatch</kbd>, puede especificar opcionalmente las entradas que se pasan al flujo de trabajo.
@@ -316,6 +491,18 @@ image: https://images.unsplash.com/photo-1541873676-a18131494184
 3. 🔐 We don't have a problem with environment variables because they are loaded into GitHub secrets ➡️ security.
 4. 📚 There are many execution templates that help us make it even faster.
 5. 🚀 We do not make the execution of the codes depend on us.
+
+<style>
+h1 {
+  background-color: #2B90B6;
+  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+</style>
 
 <!--
 1. El panel de QA -> va a aws, si tuviera GPU podríamos correr los contratos quizás.
