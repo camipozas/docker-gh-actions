@@ -20,7 +20,7 @@ drawings:
   persist: false
 ---
 
-# Docker and GitHub Actions
+<h1 id="title">Docker and GitHub Actions</h1> 
 
 Camila Pozas - TechOps
 
@@ -39,3 +39,10 @@ Camila Pozas - TechOps
     <carbon-logo-github />
   </a>
 </div>
+
+<style>
+  #title {
+  background-image: none;
+  background-color: white;
+}
+</style>
