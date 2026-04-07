@@ -22,7 +22,7 @@ drawings:
 
 <h1 id="title">Docker and GitHub Actions</h1> 
 
-Camila Pozas - TechOps
+Camila Pozas - Senior Software Engineer
 
 <div class="pt-12">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
