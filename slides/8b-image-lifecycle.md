@@ -1,0 +1,28 @@
+# Cleaning Up
+
+Docker images take up space. Here's how to clean up.
+
+```bash
+# See all your images and their sizes
+docker images
+
+# Delete everything unused
+docker system prune
+
+# Delete ALL unused images (more aggressive)
+docker system prune -a
+
+# See how much space Docker is using
+docker system df
+```
+
+💡 Run `docker system prune` once a week to keep your disk clean.
+
+<link href="styles/style.css" rel="stylesheet" type="text/css" />
+
+<!--
+- Images accumulate quickly, especially if you do many builds.
+- docker system prune only deletes what's not being used — it's safe.
+- With -a it deletes EVERYTHING without an active container. Be careful if you have images you want to keep.
+- docker system df is like "du" but for Docker — shows how much space each thing uses.
+-->

@@ -1,29 +1,29 @@
 # Basic Example
 
 ```docker {all|1-4|6-9|10-11|13|15-16|all}
-FROM python:3.9
+FROM python:3.13-slim
 
 ENV APP_HOME /usr/src/app
-WORKDIR /$APP_HOME
+WORKDIR $APP_HOME
 
 # Install python dependencies
 COPY requirements.txt /tmp/
-RUN pip install --requirement /tmp/requirements.txt
+RUN pip install --no-cache-dir --requirement /tmp/requirements.txt
 RUN pip freeze
 # Copy env variables
-ADD .env .env
+COPY .env .env
 
 COPY . $APP_HOME/
 
 # Run
-CMD python main.py
+CMD ["python", "main.py"]
 ```
 
 <link href="styles/style.css" rel="stylesheet" type="text/css" />
 
 
 <!--
-- ENV APP_HOME /usr/src/app: dice que la imagen va a tener una variable de ambiente (no lo trae por defecto, seguridad).
-- WORKDIR /$APP_HOME: crea esa carpeta en la imagen
-- COPY . $APP_HOME/ lo que hace es: copia todos los archivos pero allá (en la imagen).
+- ENV APP_HOME /usr/src/app: sets an environment variable in the image (not included by default, for security).
+- WORKDIR $APP_HOME: creates that folder in the image and sets it as the working directory.
+- COPY . $APP_HOME/: copies all files from your machine into the image.
 -->

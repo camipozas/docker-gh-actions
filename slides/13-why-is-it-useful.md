@@ -14,9 +14,9 @@ image: https://images.unsplash.com/photo-1541873676-a18131494184
 <link href="styles/style.css" rel="stylesheet" type="text/css" />
 
 <!--
-1. El panel de QA -> va a aws, si tuviera GPU podríamos correr los contratos quizás.
-2. Puede ser una imagen o no dado que igual podemos correr un <kbd>main.py</kbd>
-3. Estas sólo las carga el dueño del repo pero da lo mismo.
-4. Está lleno en internet (de ahí me basé para el de Fresh).
-5. Dejamos de lado que los códigos tengamos que correrlos en local.
+1. Some tools don't need complex architecture — they just need to run on a schedule.
+2. It can be a Docker image or just a script like main.py.
+3. Secrets are only configured by the repo owner, but that's fine.
+4. There are many templates available online to get started quickly.
+5. We don't depend on running code on our local machines anymore.
 -->

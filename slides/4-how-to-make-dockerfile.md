@@ -15,10 +15,10 @@ This file is made up of a series of commands that I will indicate below, and tha
 
 
 <!--
-1. ADD | copia un archivo del host al contenedor.
-2. CMD | el argumento que pasa por defecto.
-3. ENTRYPOINT | el comando que se ejecuta por defecto al iniciar el contenedor.
-4. ENV | le permite declarar una variable de entorno en el contenedor.
-5. EXPOSE | abrir un puerto de contenedores.
-6. FROM | indica la imagen base que utilizará para crear su imagen personalizada. Esta opción es obligatoria y también debe ser la primera instrucción en el Dockerfile.
+1. ADD — copies a file from the host to the container.
+2. CMD — the default argument passed to the container.
+3. ENTRYPOINT — the command that runs by default when the container starts.
+4. ENV — declares an environment variable inside the container.
+5. EXPOSE — opens a container port.
+6. FROM — sets the base image. This is required and must be the first instruction in the Dockerfile.
 -->
