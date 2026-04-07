@@ -1,24 +1,18 @@
 # GitHub Actions Marketplace
 
-🏪 A catalog of **ready-to-use actions** created by the community.
+🏪 A catalog of **ready-to-use actions** — find them at **github.com/marketplace**.
 
-Find them at **github.com/marketplace** → filter by **Actions**.
+Popular actions:
 
-### Popular Actions
-
-| Action | What it does |
-| --- | --- |
-| `actions/checkout@v4` | Clone your repo |
-| `actions/setup-node@v4` | Install Node.js |
-| `actions/cache@v4` | Cache dependencies |
-| `docker/build-push-action@v6` | Build and push images |
-| `docker/login-action@v3` | Login to a registry |
+- `actions/checkout@v4` — clone your repo
+- `actions/setup-node@v4` — install Node.js
+- `actions/cache@v4` — cache dependencies
+- `docker/build-push-action@v6` — build and push images
 
 ### Tips
 
 - 🔒 Always use a **specific version** (`@v4`, not `@main`)
 - ✅ Prefer actions with many ⭐ stars
-- 📖 Read the **README** for required inputs
 
 <link href="styles/style.css" rel="stylesheet" type="text/css" />
 

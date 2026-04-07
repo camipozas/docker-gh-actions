@@ -39,6 +39,10 @@ src: ./slides/7d-best-practices.md
 ---
 
 ---
+src: ./slides/7d2-best-practices-dont.md
+---
+
+---
 src: ./slides/7e-volumes-networking.md
 ---
 
@@ -64,6 +68,10 @@ src: ./slides/9b-docker-hub.md
 
 ---
 src: ./slides/9c-docker-compose.md
+---
+
+---
+src: ./slides/9c2-docker-compose-commands.md
 ---
 
 ---
@@ -95,6 +103,10 @@ src: ./slides/12e-docker-cicd.md
 ---
 
 ---
+src: ./slides/12e2-docker-cicd-build.md
+---
+
+---
 src: ./slides/12f-caching-artifacts.md
 ---
 
@@ -104,6 +116,10 @@ src: ./slides/12g-environments-deployments.md
 
 ---
 src: ./slides/12h-common-errors.md
+---
+
+---
+src: ./slides/12h2-common-errors-actions.md
 ---
 
 ---

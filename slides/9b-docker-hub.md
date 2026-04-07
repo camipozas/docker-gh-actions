@@ -3,26 +3,13 @@
 ☁️ The world's largest container registry — **store, share, and distribute** Docker images.
 
 ```bash
-# 1. Login
-docker login
-
-# 2. Tag your image
-docker tag my-app:latest username/my-app:1.0.0
-
-# 3. Push to Docker Hub
-docker push username/my-app:1.0.0
-
-# 4. Anyone can pull it
-docker pull username/my-app:1.0.0
+docker login                                      # Login
+docker tag my-app:latest username/my-app:1.0.0    # Tag
+docker push username/my-app:1.0.0                 # Push
+docker pull username/my-app:1.0.0                 # Pull
 ```
 
-### Other registries
-
-| Registry | When to use |
-| --- | --- |
-| **Docker Hub** | Public images, open source |
-| **ghcr.io** | Integrated with GitHub |
-| **AWS ECR** | Private, AWS projects |
+Other registries: **ghcr.io** (GitHub), **AWS ECR**, **Google Artifact Registry**
 
 <link href="styles/style.css" rel="stylesheet" type="text/css" />
 

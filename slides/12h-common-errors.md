@@ -1,28 +1,23 @@
-# Common Errors
+# Common Docker Errors
 
-### Docker
+- 🔴 **Port already in use**
+  `docker ps` → stop the other container or change port
 
-| Error | Fix |
-| --- | --- |
-| Port already in use | `docker ps` → stop it or change port |
-| Image not found | Check the name on Docker Hub |
-| Build fails | Run `docker build` from the right folder |
+- 🔴 **Image not found**
+  Check the exact image name and tag on Docker Hub
 
-### GitHub Actions
+- 🔴 **Build fails**
+  Make sure you run `docker build` from the right folder
 
-| Error | Fix |
-| --- | --- |
-| Workflow doesn't run | Check the `on:` section |
-| Secret not found | Check name in Settings → Secrets |
-| Permission denied | Add `permissions: packages: write` |
+- 🔴 **Permission denied**
+  You might need to run as root or fix file permissions
 
-💡 Always check the **Actions tab** for logs.
+💡 Always run `docker logs <container>` first.
 
 <link href="styles/style.css" rel="stylesheet" type="text/css" />
 
 <!--
-- This slide is a quick reference — come back to it when you run into problems.
 - 90% of Docker errors are incorrect paths or ports already in use.
-- 90% of GitHub Actions errors are misconfigured triggers or misspelled secrets.
-- Always read the full logs — the answer is almost always there.
+- docker logs is always the first thing you should check.
+- If the port is in use, run "docker ps" to see which container is using it.
 -->
