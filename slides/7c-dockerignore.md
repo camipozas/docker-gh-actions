@@ -4,16 +4,18 @@ Just like `.gitignore`, this file tells Docker which files to **exclude** when b
 
 ```text
 node_modules
+npm-debug.log
 .git
+.gitignore
 .env
+.env.*
 dist
 coverage
+*.md
 Dockerfile
+docker-compose.yml
+.dockerignore
 ```
-
-- 🚀 **Faster builds** — less files to send to Docker
-- 🔒 **Security** — keeps secrets out of the image
-- 📦 **Smaller images** — no unnecessary files
 
 <link href="styles/style.css" rel="stylesheet" type="text/css" />
 

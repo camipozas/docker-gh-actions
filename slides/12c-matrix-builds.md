@@ -5,10 +5,11 @@
 ```yaml
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         node-version: [18, 20, 22]
+        os: [ubuntu-latest, macos-latest]
 
     steps:
       - uses: actions/checkout@v4
@@ -19,13 +20,7 @@ jobs:
       - run: npm test
 ```
 
-This generates **3 jobs** automatically, one per version.
-
-### When to use it?
-
-- 📦 Test across **multiple versions**
-- 💻 Build for **multiple OS**
-- 🧪 Test with **different databases**
+This generates **6 jobs** (3 versions × 2 OS).
 
 <link href="styles/style.css" rel="stylesheet" type="text/css" />
 

@@ -9,8 +9,8 @@ docker images
 # Delete everything unused
 docker system prune
 
-# Delete only unused images
-docker image prune
+# Delete ALL unused images (more aggressive)
+docker system prune -a
 
 # See how much space Docker is using
 docker system df

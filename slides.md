@@ -35,6 +35,10 @@ src: ./slides/7c-dockerignore.md
 ---
 
 ---
+src: ./slides/7c2-dockerignore-why.md
+---
+
+---
 src: ./slides/7d-best-practices.md
 ---
 
@@ -67,6 +71,10 @@ src: ./slides/9b-docker-hub.md
 ---
 
 ---
+src: ./slides/9b2-other-registries.md
+---
+
+---
 src: ./slides/9c-docker-compose.md
 ---
 
@@ -91,11 +99,19 @@ src: ./slides/12b-secrets-variables.md
 ---
 
 ---
+src: ./slides/12b2-secrets-example.md
+---
+
+---
 src: ./slides/12c-matrix-builds.md
 ---
 
 ---
 src: ./slides/12d-marketplace.md
+---
+
+---
+src: ./slides/12d2-marketplace-tips.md
 ---
 
 ---
