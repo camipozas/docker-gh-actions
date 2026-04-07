@@ -19,7 +19,7 @@ jobs:
   upload:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v4
       - name: Build docker images
         working-directory: ./testrail-freshdesk-api
         run: docker build -t local .
@@ -31,11 +31,11 @@ jobs:
 <link href="styles/style.css" rel="stylesheet" type="text/css" />
 
 <!--
-- Al usar el evento <kbd>workflow_dispatch</kbd>, puede especificar opcionalmente las entradas que se pasan al flujo de trabajo.
-- <kbd>upload</kbd> lo que hace, es el nombre del job
-- <kbd>uses: actions/checkout@master</kbd>: lo que hace es, trae los códigos del branch donde estoy
-- <kbd>- name: Build docker images</kbd>: el nombre que le damos a dicha acción a continuación.
-- <kbd>working-directory: ./testrail-freshdesk-api</kbd>: donde lo está corriendo.
-- <kbd>run: docker build -t local .</kbd>: lo que va a ejecutar
-- <kbd>run: docker run -e AWS_ACCESS_KEY_ID=${{ secrets.AWS_ACCESS_KEY_ID }} local</kbd>: la <kbd>-e</kbd> es una variable de ambiente al contenedor y <kbd>local</kbd> es: el nombre de la imagen.
+- workflow_dispatch: lets you manually trigger the workflow and optionally pass inputs.
+- "upload" is just the name of the job.
+- uses: actions/checkout@v4 — clones the code from the current branch.
+- name: Build docker images — the label we give to the next action.
+- working-directory: ./testrail-freshdesk-api — the folder where it runs.
+- run: docker build -t local . — the command it will execute.
+- -e passes an environment variable to the container, "local" is the image name.
 -->
