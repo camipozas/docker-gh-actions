@@ -30,5 +30,7 @@ a {
 <link href="styles/style.css" rel="stylesheet" type="text/css" />
 
 <!--
-Definición de GitHub: _Automatice, personalice y ejecute sus flujos de trabajo de desarrollo de software directamente en su repositorio con GitHub Actions. Puede descubrir, crear y compartir acciones para realizar cualquier trabajo que desee, incluido CI/CD, y combinar acciones en un flujo de trabajo completamente personalizado._
+- GitHub Actions lets you automate, customize, and run your software development workflows right in your repository.
+- You can discover, create, and share actions for any job you need, including CI/CD.
+- You don't need to know much about infrastructure to use it.
 -->

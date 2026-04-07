@@ -13,9 +13,9 @@
 <link href="styles/style.css" rel="stylesheet" type="text/css" />
 
 <!--
-- **Workflows:** es un proceso automatizado configurable que ejecutará uno o más jobs.
-- **Events:** Un evento es una actividad específica en un repositorio, la cual activa una ejecución de flujo de trabajo.
-- **Jobs:** es un conjunto de pasos en un flujo de trabajo, los cuales se ejecutan en el mismo ejecutor. Los pasos se ejecutarán en orden y serán dependientes uno del otro.
-- **Actions:** es una aplicación personalizada para la plataforma de GitHub Actions que realiza una tarea compleja pero que se repite frecuentemente.
-- **Runners:** es un servidor que ejecuta tus flujos de trabajo cuando se activan. Cada ejecutor puede ejecutar un job individual a la vez. GitHub proporciona ejecutores de Ubuntu Linux, Microsoft Windows y macOS para ejecutar tus flujos de trabajo; cada flujo de trabajo se ejecuta en una máquina virtual nueva y recién aprovisionada. Si necesitas un sistema operativo diferente o si requieres una configuración de hardware específica, puedes hospedar tus propios ejecutores. 
+- Workflows: an automated process that runs one or more jobs.
+- Events: a specific activity in a repository that triggers a workflow run.
+- Jobs: a set of steps in a workflow that run on the same runner. Steps run in order and depend on each other.
+- Actions: a custom application for GitHub Actions that performs a complex but frequently repeated task.
+- Runners: a server that runs your workflows when triggered. Each runner can run one job at a time. GitHub provides Ubuntu, Windows, and macOS runners. You can also host your own runners if you need a different OS or specific hardware.
 -->

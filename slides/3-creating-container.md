@@ -25,9 +25,8 @@ centrado {
 [^1]: [Learn More](https://profile.es/blog/que_es_docker/)
 
 <!--
-Además, es necesario aclarar que dentro del contenedor se definen una serie de instrucciones **(dockerfile)** que permiten crear una imagen **(docker image)** con la cual iniciar dicho contenedor **(docker container)**.
-
-1. 🐳 **Dockerfile:** es el documento de texto sobre el que podemos agrupar una serie de comandos para que se ejecuten todos a la vez, evitando así tener que ejecutarlos uno a uno manualmente para que el proceso de creación una imagen de Docker es mucho más fácil. más rápido y más eficiente.
-2. 🖼️ **Imagen de Docker:** una imagen de Docker, contiene las bibliotecas, junto con el código de la aplicación que contiene todo lo necesario para ejecutar nuestra aplicación.
-3. 📦 **Contenedor:** Es una imagen de Docker cuando empieza a funcionar, es decir, cuando cobra vida.
+- Inside the container, a series of instructions (Dockerfile) are defined to create an image (Docker image) to start the container (Docker container).
+- Dockerfile: a text document where you group commands to be executed together, making image creation easier and faster.
+- Docker image: contains libraries and application code — everything needed to run the app.
+- Container: a Docker image when it starts running — when it comes to life.
 -->
