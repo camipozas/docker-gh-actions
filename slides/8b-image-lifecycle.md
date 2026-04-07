@@ -1,17 +1,12 @@
----
-layout: image-right
-image: https://images.unsplash.com/photo-1527515637462-cee1aa7740b1
----
-
 # Cleaning Up
 
-Docker images take up space on your computer. Here's how to clean up.
+Docker images take up space. Here's how to clean up.
 
 ```bash
 # See all your images and their sizes
 docker images
 
-# Delete everything unused (containers, images, networks)
+# Delete everything unused
 docker system prune
 
 # Delete only unused images
@@ -21,15 +16,7 @@ docker image prune
 docker system df
 ```
 
-### 💡 Tip
-
-Run `docker system prune` once a week to keep your disk clean.
-
-Add `-a` to also remove images that aren't being used by any container:
-
-```bash
-docker system prune -a
-```
+💡 Run `docker system prune` once a week to keep your disk clean.
 
 <link href="styles/style.css" rel="stylesheet" type="text/css" />
 

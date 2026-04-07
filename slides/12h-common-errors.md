@@ -1,26 +1,22 @@
-# Common Errors & How to Fix Them
-
-A quick reference for the most frequent problems you'll encounter.
+# Common Errors
 
 ### Docker
 
-| Error | Why | Fix |
-| --- | --- | --- |
-| Port already in use | Another container is using that port | `docker ps` → stop it, or use a different port |
-| Image not found | Wrong name or tag | Check the exact name on Docker Hub |
-| Build fails | Wrong path or missing file | Make sure you run `docker build` from the right folder |
+| Error | Fix |
+| --- | --- |
+| Port already in use | `docker ps` → stop it or change port |
+| Image not found | Check the name on Docker Hub |
+| Build fails | Run `docker build` from the right folder |
 
 ### GitHub Actions
 
-| Error | Why | Fix |
-| --- | --- | --- |
-| Workflow doesn't run | Wrong branch or trigger | Check the `on:` section in your YAML |
-| Secret not found | Typo or wrong scope | Go to Settings → Secrets and check the name |
-| Permission denied | Missing permissions in workflow | Add `permissions: packages: write` |
+| Error | Fix |
+| --- | --- |
+| Workflow doesn't run | Check the `on:` section |
+| Secret not found | Check name in Settings → Secrets |
+| Permission denied | Add `permissions: packages: write` |
 
-### 💡 Tip
-
-Always check the **Actions tab** in your repo to see the logs. The error message usually tells you exactly what went wrong.
+💡 Always check the **Actions tab** for logs.
 
 <link href="styles/style.css" rel="stylesheet" type="text/css" />
 

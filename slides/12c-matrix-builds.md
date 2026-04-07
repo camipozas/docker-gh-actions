@@ -1,8 +1,3 @@
----
-layout: image-right
-image: https://images.unsplash.com/photo-1558494949-ef010cbdcc31
----
-
 # Matrix Builds
 
 🔄 Run the **same job** across multiple configurations automatically.
@@ -14,25 +9,23 @@ jobs:
     strategy:
       matrix:
         node-version: [18, 20, 22]
-        os: [ubuntu-latest, macos-latest]
 
     steps:
       - uses: actions/checkout@v4
-      - name: Setup Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
       - run: npm test
 ```
 
-This generates **6 jobs** automatically (3 versions × 2 OS).
+This generates **3 jobs** automatically, one per version.
 
 ### When to use it?
 
-- 📦 Test your library across **multiple Node/Python versions**
-- 💻 Build for **multiple operating systems**
-- 🧪 Run tests with **different databases** (PostgreSQL, MySQL)
+- 📦 Test across **multiple versions**
+- 💻 Build for **multiple OS**
+- 🧪 Test with **different databases**
 
 <link href="styles/style.css" rel="stylesheet" type="text/css" />
 

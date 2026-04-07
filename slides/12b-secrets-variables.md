@@ -1,49 +1,25 @@
----
-layout: image-right
-image: https://images.unsplash.com/photo-1555066931-4365d14bab8c
----
-
 # Secrets & Variables
 
-🔐 GitHub provides two ways to store configuration for your workflows.
+🔐 Two ways to store configuration for your workflows.
 
-<div class="grid grid-cols-2 gap-6">
-<div>
-
-### Secrets
-- **Encrypted** values, never shown in logs
+### Secrets (encrypted, hidden in logs)
 - For passwords, tokens, API keys
 - Access: `${{ secrets.MY_SECRET }}`
 
-**How to create:**
-1. Go to repo → **Settings**
-2. **Secrets and variables** → **Actions**
-3. Click **New repository secret**
-
-</div>
-<div>
-
-### Variables
-- **Plain text**, visible in logs
+### Variables (plain text, visible in logs)
 - For non-sensitive config (URLs, flags)
 - Access: `${{ vars.MY_VARIABLE }}`
-
-**Scopes:**
-- 🏢 **Organization** — shared across repos
-- 📁 **Repository** — specific to one repo
-- 🌍 **Environment** — per environment (prod, staging)
-
-</div>
-</div>
 
 ```yaml
 steps:
   - name: Deploy
     env:
-      API_KEY: ${{ secrets.API_KEY }}        # encrypted
-      API_URL: ${{ vars.API_URL }}           # plain text
+      API_KEY: ${{ secrets.API_KEY }}
+      API_URL: ${{ vars.API_URL }}
     run: ./deploy.sh
 ```
+
+Create them in: **Settings** → **Secrets and variables** → **Actions**
 
 <link href="styles/style.css" rel="stylesheet" type="text/css" />
 

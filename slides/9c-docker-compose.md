@@ -8,30 +8,22 @@ services:
     build: .
     ports:
       - "3000:3000"
-    environment:
-      - DATABASE_URL=postgres://user:pass@db:5432/mydb
     depends_on:
       - db
-      - redis
 
   db:
     image: postgres:17-alpine
     volumes:
       - pgdata:/var/lib/postgresql/data
-    environment:
-      - POSTGRES_PASSWORD=pass
-
-  redis:
-    image: redis:7-alpine
 
 volumes:
   pgdata:
 ```
 
 ```bash
-docker compose up -d      # Start all services in background
-docker compose down        # Stop and remove containers
-docker compose logs -f     # Follow logs from all services
+docker compose up -d      # Start in background
+docker compose down        # Stop and remove
+docker compose logs -f     # Follow logs
 ```
 
 <link href="styles/style.css" rel="stylesheet" type="text/css" />

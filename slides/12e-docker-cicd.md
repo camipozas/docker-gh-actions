@@ -1,13 +1,11 @@
 # Docker + GitHub Actions 🚀
 
-A complete CI/CD workflow: **test → build → push** a Docker image to GitHub Container Registry.
+A complete CI/CD workflow: **test → build → push** to GitHub Container Registry.
 
 ```yaml
 name: CI/CD Pipeline
 on:
   push:
-    branches: [main]
-  pull_request:
     branches: [main]
 
 jobs:
@@ -18,12 +16,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: npm ci
-      - run: npm test
+      - run: npm ci && npm test
 
   build-and-push:
     needs: test
-    if: github.event_name == 'push'
     runs-on: ubuntu-latest
     permissions:
       packages: write
@@ -44,7 +40,6 @@ jobs:
 
 <!--
 - needs: test makes build-and-push wait until the test job passes.
-- if: github.event_name == 'push' prevents publishing images on PRs.
 - GITHUB_TOKEN is an automatic secret — you don't need to create it.
 - ghcr.io is GitHub's registry — the image gets linked to your repo.
 -->

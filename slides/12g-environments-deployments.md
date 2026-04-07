@@ -1,8 +1,3 @@
----
-layout: image-right
-image: https://images.unsplash.com/photo-1517976487492-5750f3195933
----
-
 # Deploying Safely
 
 **Environments** let you have different settings for staging and production.
@@ -23,8 +18,7 @@ You can require **approval** before deploying to production:
 
 1. Go to **Settings** → **Environments**
 2. Create `production` environment
-3. Add **Required reviewers**
-4. Now someone must approve before the deploy runs ✅
+3. Add **Required reviewers** ✅
 
 Each environment can have its own **secrets** and **variables**.
 

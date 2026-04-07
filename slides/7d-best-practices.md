@@ -1,39 +1,23 @@
----
-layout: image-right
-image: https://images.unsplash.com/photo-1504639725590-34d0984388bd
----
-
 # Docker Best Practices
-
-<div class="grid grid-cols-2 gap-4">
-<div>
 
 ### Do ✅
 
-- Use **specific tags** (`node:22-alpine`, not `node:latest`)
+- Use **specific tags** (`node:22-alpine`, not `latest`)
 - Use **multi-stage builds** to reduce image size
-- Use **`COPY`** instead of `ADD` (unless you need tar extraction)
-- Combine `RUN` commands with `&&` to reduce layers
+- Use **`COPY`** instead of `ADD`
+- Combine `RUN` commands with `&&`
 - Add **`HEALTHCHECK`** to your containers
 - Run as **non-root user**
-
-</div>
-<div>
 
 ### Don't ❌
 
 - Don't store **secrets** in the image
 - Don't use `latest` tag in production
 - Don't install **unnecessary packages**
-- Don't run processes as **root**
-- Don't ignore `.dockerignore`
-- Don't use `ADD` when `COPY` is enough
-
-</div>
-</div>
+- Don't run as **root**
 
 ```docker
-# Example: non-root user
+# Run as non-root user
 RUN addgroup --system app && adduser --system --ingroup app app
 USER app
 ```

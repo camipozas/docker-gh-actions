@@ -1,36 +1,28 @@
----
-layout: image-right
-image: https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d
----
-
 # Docker Hub
 
-☁️ [Docker Hub](https://hub.docker.com/) is the world's largest container registry — a place to **store, share, and distribute** Docker images.
-
-### Publishing an image
+☁️ The world's largest container registry — **store, share, and distribute** Docker images.
 
 ```bash
-# 1. Login to Docker Hub
+# 1. Login
 docker login
 
-# 2. Tag your image with your username
+# 2. Tag your image
 docker tag my-app:latest username/my-app:1.0.0
 
 # 3. Push to Docker Hub
 docker push username/my-app:1.0.0
 
-# 4. Anyone can now pull your image
+# 4. Anyone can pull it
 docker pull username/my-app:1.0.0
 ```
 
 ### Other registries
 
-| Registry | Usage |
+| Registry | When to use |
 | --- | --- |
-| **Docker Hub** | Public/private images, free tier available |
-| **GitHub Container Registry (ghcr.io)** | Integrated with GitHub repos and Actions |
-| **AWS ECR** | Private registry in AWS ecosystem |
-| **Google Artifact Registry** | Private registry in GCP ecosystem |
+| **Docker Hub** | Public images, open source |
+| **ghcr.io** | Integrated with GitHub |
+| **AWS ECR** | Private, AWS projects |
 
 <link href="styles/style.css" rel="stylesheet" type="text/css" />
 
