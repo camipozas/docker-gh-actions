@@ -4,12 +4,12 @@ Here you can find the basics of Docker and GitHub Actions, in addition to findin
 
 To start the slide show:
 
-- `npm install`
-- `npm run dev`
+- `pnpm install`
+- `pnpm dev`
 - visit http://localhost:3030
 
 Edit the [slides.md](./slides.md) to see the changes.
 
-Learn more about Slidev on [documentations](https://sli.dev/).
+Learn more about Slidev on [documentation](https://sli.dev/).
 
 You can see this in production [here](https://docker-gh-actions.vercel.app/).
