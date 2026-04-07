@@ -1,21 +1,13 @@
 ---
-# try also 'default' to start simple
+title: Docker and GitHub Actions
 theme: default
-# random image from a curated Unsplash collection by Anthony
 background: https://images.unsplash.com/photo-1555109307-f7d9da25c244
-# apply any windi css classes to the current slide
 class: 'text-center'
-# https://sli.dev/custom/highlighters.html
 highlighter: shiki
-# show line numbers in code blocks
 lineNumbers: true
-# some information about the slides, markdown enabled
 info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
-# persist drawings in exports and build
+  ## Docker and GitHub Actions
+  Learn the basics of Docker and GitHub Actions.
 drawings:
   persist: false
 ---
